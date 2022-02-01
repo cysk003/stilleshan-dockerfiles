@@ -1,7 +1,7 @@
 FROM golang:1.11-alpine AS BUILD
 
 
-ENV VERSION 1.2.0
+ARG VERSION 1.2.0
 WORKDIR /src
 
 # module

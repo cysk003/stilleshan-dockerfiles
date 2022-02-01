@@ -1,5 +1,5 @@
 FROM golang:1.13-buster AS builder
-ENV VERSION v0.39.2
+ARG VERSION v0.39.2
 
 RUN apt-get update \
  && apt-get install make git bash gcc \

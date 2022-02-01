@@ -1,7 +1,7 @@
 ARG PHP_VERSION=7.4-apache
 FROM alpine as downloader
 
-ENV VERSION 1.3.0
+ARG VERSION 1.3.0
 ARG CHEVERETO_VERSION=1.3.0
 RUN apk add --no-cache curl && \
     curl -sS -o /tmp/chevereto.zip -L "https://github.com/Chevereto/Chevereto-Free/archive/${CHEVERETO_VERSION}.zip" && \

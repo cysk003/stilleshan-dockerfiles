@@ -1,7 +1,7 @@
 FROM alpine
-LABEL org.opencontainers.image.authors="stille@ioiox.com"
+LABEL maintainer="Stille <stille@ioiox.com>"
 
-ENV VERSION 11.5
+ARG VERSION 11.5
 
 RUN set -xe && \
     UNAME=$(uname -m) && if [ "$UNAME" = "x86_64" ]; then export PLATFORM=amd64 ; else export PLATFORM=arm64-v8 ; fi && \

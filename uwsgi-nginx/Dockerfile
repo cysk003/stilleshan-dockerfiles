@@ -1,7 +1,7 @@
 FROM python:3.7-buster
 
 LABEL maintainer="Sebastian Ramirez <tiangolo@gmail.com>"
-ENV VERSION python3.7
+ARG VERSION python3.7
 COPY install-nginx-debian.sh /
 
 RUN bash /install-nginx-debian.sh

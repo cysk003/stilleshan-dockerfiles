@@ -1,7 +1,7 @@
 FROM ubuntu:21.10
-MAINTAINER Stille <stille@ioiox.com>
+LABEL maintainer="Stille <stille@ioiox.com>"
 
-ENV VERSION 0.3.1
+ARG VERSION 0.3.1
 
 COPY Shanghai /usr/share/zoneinfo/Asia/
 
